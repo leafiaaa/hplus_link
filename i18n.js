@@ -24,7 +24,7 @@
       tagline: "We do Hundred Plus Services",
       linkHundredPlus: "Hundred Plus 網站",
       link101Form: "101Form 網站",
-      linkXninja: "xNinja AI 智慧工作平台 — Hundred Plus",
+      linkXninja: "xNinja AI Workhub 網站",
       linkFacebook: "Facebook",
       linkLinkedin: "LinkedIn",
       linkYoutube: "Youtube",
