@@ -42,7 +42,7 @@
       linkFacebook: "Facebook",
       linkLinkedin: "LinkedIn",
       linkYoutube: "Youtube",
-      linkTiktok: "Hundred Plus TH Tiktok",
+      linkTiktok: " TH Tiktok",
     },
   };
 
