@@ -32,7 +32,7 @@
       selectLanguage: "選擇語言",
       language: "語言",
       heading: "Hundred Plus",
-      tagline: "我們提供 Hundred Plus 服務",
+      tagline: "專‧業‧來‧自‧加‧值‧的‧服‧務",
       linkHundredPlus: "Hundred Plus 官網",
       link101Form: "101Form 官網",
       linkXninja: "xNinja AI 智慧工作平台 — Hundred Plus",
