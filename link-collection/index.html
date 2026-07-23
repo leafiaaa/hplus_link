@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hundred Plus — Links</title>
+    <title data-i18n="pageTitle">Hundred Plus — Links</title>
     <style>
       :root {
         --bg-top: #3a3a3a;
@@ -328,6 +328,7 @@
             aria-haspopup="listbox"
             aria-expanded="false"
             aria-label="Select language"
+            data-i18n-attr="aria-label:selectLanguage"
           >
             <svg
               width="20px"
@@ -363,6 +364,7 @@
             id="langMenu"
             role="listbox"
             aria-label="Language"
+            data-i18n-attr="aria-label:language"
           >
             <li>
               <button
@@ -441,8 +443,8 @@
         <img width="70px" src="hundredplus.webp" />
       </div>
 
-      <h1>Hundred Plus</h1>
-      <p class="tagline">We do Hundred Plus Services</p>
+      <h1 data-i18n="heading">Hundred Plus</h1>
+      <p class="tagline" data-i18n="tagline">We do Hundred Plus Services</p>
 
       <div class="link-list">
         <a
@@ -454,7 +456,9 @@
           <span class="link-icon">
             <img width="28px" src="hundredplus.webp" />
           </span>
-          <span class="link-label">Hundred Plus Website</span>
+          <span class="link-label" data-i18n="linkHundredPlus"
+            >Hundred Plus Website</span
+          >
         </a>
         <a
           class="link-card"
@@ -465,7 +469,9 @@
           <span class="link-icon">
             <img width="22px" src="form.webp" />
           </span>
-          <span class="link-label">101Form Website</span>
+          <span class="link-label" data-i18n="link101Form"
+            >101Form Website</span
+          >
         </a>
         <a
           class="link-card tint-red"
@@ -476,7 +482,9 @@
           <span class="link-icon white-icon">
             <img width="20px" src="xNinja.webp" />
           </span>
-          <span class="link-label">xNinja AI Workhub — Hundred Plus</span>
+          <span class="link-label" data-i18n="linkXninja"
+            >xNinja AI Workhub — Hundred Plus</span
+          >
         </a>
 
         <a
@@ -493,7 +501,7 @@
               />
             </svg>
           </span>
-          <span class="link-label">Facebook</span>
+          <span class="link-label" data-i18n="linkFacebook">Facebook</span>
         </a>
 
         <a
@@ -510,7 +518,7 @@
               />
             </svg>
           </span>
-          <span class="link-label">LinkedIn</span>
+          <span class="link-label" data-i18n="linkLinkedin">LinkedIn</span>
         </a>
 
         <a
@@ -527,7 +535,7 @@
               />
             </svg>
           </span>
-          <span class="link-label">Hundred Plus</span>
+          <span class="link-label" data-i18n="linkYoutube">Hundred Plus</span>
         </a>
 
         <a
@@ -544,11 +552,14 @@
               />
             </svg>
           </span>
-          <span class="link-label">Hundred Plus TH Tiktok</span>
+          <span class="link-label" data-i18n="linkTiktok"
+            >Hundred Plus TH Tiktok</span
+          >
         </a>
       </div>
     </div>
 
+    <script src="i18n.js"></script>
     <script>
       (function () {
         var switcher = document.getElementById("langSwitcher");
@@ -602,10 +613,15 @@
               a.setAttribute("href", swapped);
             });
 
+            // Translate all tagged text/attributes on the page
+            if (window.i18n) window.i18n.apply(lang);
+
             closeMenu();
             btn.focus();
           });
         });
+
+        if (window.i18n) window.i18n.apply("en");
       })();
     </script>
   </body>
